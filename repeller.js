@@ -1,15 +1,26 @@
 class Repeller {
   constructor(x, y) {
-    this.power = 150;
+    this.power = 200;
     this.position = createVector(x, y);
   }
 
   display() {
-    stroke(255);
-    strokeWeight(2);
-    fill(127);
-    ellipse(this.position.x, this.position.y, 32, 32);
-  }
+    stroke(34);
+    strokeWeight(1);
+    fill(240);
+    ellipse(this.position.x, this.position.y, 90, 90);
+
+    // strokeWeight(0.5);
+    // ellipse(this.position.x, this.position.y, 150, 150);
+
+}
+
+// display(){
+//     storke(34);
+//     storkeWeight(1);
+//     fill(0);
+//     ellipse(this.position.x, this.position.y,150,150);
+  // }
 
   repel(p) {
     let dir = p5.Vector.sub(this.position, p.position); // Calculate direction of force
