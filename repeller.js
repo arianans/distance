@@ -8,7 +8,7 @@ class Repeller {
     stroke(34);
     strokeWeight(1);
     fill(240);
-    ellipse(this.position.x, this.position.y, 90, 90);
+    ellipse(this.position.x, this.position.y, 180, 180);
 
     // strokeWeight(0.5);
     // ellipse(this.position.x, this.position.y, 150, 150);
