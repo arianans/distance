@@ -5,10 +5,14 @@ class Repeller {
   }
 
   display() {
-    stroke(34);
-    strokeWeight(1);
-    fill(240);
-    ellipse(this.position.x, this.position.y, 180, 180);
+    stroke(255);
+    strokeWeight(2);
+    fill(255,255,255,0);
+    ellipse(this.position.x, this.position.y, 300, 300);
+
+    noStroke();
+    fill(200);
+    ellipse(this.position.x, this.position.y, 100, 100);
 
     // strokeWeight(0.5);
     // ellipse(this.position.x, this.position.y, 150, 150);
