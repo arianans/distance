@@ -27,7 +27,8 @@ class Repeller {
   // }
 
   repel(p) {
-    let dir = p5.Vector.sub(this.position, p.position); // Calculate direction of force
+    let dir = p5.Vector.sub(this.position, p.position);
+    // let dir = p5.Vector.sub((540,0,0),(0,540,0));// Calculate direction of force
     let d = dir.mag(); // Distance between objects
     dir.normalize(); // Normalize vector (distance doesn't matter here, we just want this vector for direction)
     d = constrain(d, 1, 100); // Keep distance within a reasonable range
